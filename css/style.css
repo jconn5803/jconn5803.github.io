@@ -326,6 +326,11 @@ a {
     border-radius: 0;
 }
 
+/* Service preview cards on homepage — taller to show subjects clearly */
+.service-card-img {
+    height: 340px;
+}
+
 /* Clickable gallery image overlay */
 #galleryGrid .card {
     position: relative;
@@ -741,6 +746,10 @@ footer hr {
 
     .card-img-top {
         height: 260px;
+    }
+
+    .service-card-img {
+        height: 300px;
     }
 
     .card-body {
