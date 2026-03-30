@@ -340,7 +340,7 @@ a {
     transform: scale(1.04);
 }
 
-/* Expand icon badge — top-right of image, always slightly visible */
+/* Expand icon badge — top-right of image */
 #galleryGrid .card::after {
     content: '⛶';
     position: absolute;
@@ -363,6 +363,28 @@ a {
     opacity: 1;
     transform: scale(1.15);
     background: rgba(47, 116, 189, 0.85);
+}
+
+/* Touch devices: show a persistent "Tap to expand" pill since hover doesn't exist */
+@media (hover: none) {
+    #galleryGrid .card::after {
+        content: '⛶  Tap to expand';
+        width: auto;
+        height: auto;
+        border-radius: 20px;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        padding: 5px 12px;
+        top: auto;
+        right: auto;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.62);
+        white-space: nowrap;
+    }
 }
 
 .hover-card {
