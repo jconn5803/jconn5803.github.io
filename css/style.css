@@ -321,9 +321,48 @@ a {
 }
 
 .card-img-top {
-    height: 238px;
+    height: 300px;
     object-fit: cover;
     border-radius: 0;
+}
+
+/* Clickable gallery image overlay */
+#galleryGrid .card {
+    position: relative;
+    overflow: hidden;
+}
+
+#galleryGrid .card-img-top {
+    transition: transform 0.35s ease;
+}
+
+#galleryGrid .card:hover .card-img-top {
+    transform: scale(1.04);
+}
+
+/* Expand icon badge — top-right of image, always slightly visible */
+#galleryGrid .card::after {
+    content: '⛶';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    font-size: 1.1rem;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    pointer-events: none;
+    opacity: 0.65;
+    transition: opacity 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+#galleryGrid .card:hover::after {
+    opacity: 1;
+    transform: scale(1.15);
+    background: rgba(47, 116, 189, 0.85);
 }
 
 .hover-card {
@@ -679,7 +718,7 @@ footer hr {
     }
 
     .card-img-top {
-        height: 210px;
+        height: 260px;
     }
 
     .card-body {

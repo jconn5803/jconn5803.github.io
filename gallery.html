@@ -513,9 +513,24 @@
         </div>
     </footer>
 
+    <!-- Lightbox Modal -->
+    <div class="modal fade" id="lightboxModal" tabindex="-1" aria-label="Image lightbox" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-dark border-0">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-2">
+                    <img id="lightboxImage" src="" alt="" class="img-fluid rounded" style="max-height:85vh;object-fit:contain;">
+                    <p id="lightboxCaption" class="text-white mt-2 mb-0"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Simple gallery filter functionality
+        // Gallery filter functionality
         const filterButtons = document.querySelectorAll('[data-filter]');
         const galleryItems = document.querySelectorAll('.gallery-item');
 
@@ -523,7 +538,6 @@
             button.addEventListener('click', () => {
                 const filter = button.getAttribute('data-filter');
                 
-                // Update active button
                 filterButtons.forEach(btn => {
                     btn.classList.remove('active', 'btn-primary');
                     btn.classList.add('btn-outline-primary');
@@ -531,7 +545,6 @@
                 button.classList.remove('btn-outline-primary');
                 button.classList.add('active', 'btn-primary');
 
-                // Filter gallery items
                 galleryItems.forEach(item => {
                     if (filter === 'all' || item.getAttribute('data-category') === filter) {
                         item.style.display = 'block';
@@ -539,6 +552,22 @@
                         item.style.display = 'none';
                     }
                 });
+            });
+        });
+
+        // Lightbox functionality
+        const lightboxModal = new bootstrap.Modal(document.getElementById('lightboxModal'));
+        const lightboxImage = document.getElementById('lightboxImage');
+        const lightboxCaption = document.getElementById('lightboxCaption');
+
+        document.querySelectorAll('#galleryGrid .card-img-top').forEach(img => {
+            img.style.cursor = 'zoom-in';
+            img.title = 'Click to expand';
+            img.addEventListener('click', () => {
+                lightboxImage.src = img.src;
+                lightboxImage.alt = img.alt;
+                lightboxCaption.textContent = img.alt;
+                lightboxModal.show();
             });
         });
     </script>
