@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - C.A. Beresford Building & Joinery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-hammer"></i> C.A. Beresford
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="areas.html">Areas We Cover</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white py-5">
+        <div class="container text-center py-5">
+            <h1 class="display-4 fw-bold">Get In Touch</h1>
+            <p class="lead">Let's discuss your building or joinery project</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-4 p-md-5">
+                            <h2 class="mb-4">Request a Free Quote</h2>
+                            <p class="text-muted mb-4">Fill out the form below and we'll get back to you within 24 hours.</p>
+                            
+                            <form id="contactForm" action="https://formspree.io/f/mdapgzgw" method="POST">
+                                <input type="hidden" name="_subject" value="New Enquiry - C.A. Beresford Website">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">First Name *</label>
+                                        <input type="text" class="form-control" id="firstName" name="First Name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name *</label>
+                                        <input type="text" class="form-control" id="lastName" name="Last Name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email Address *</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone Number *</label>
+                                        <input type="tel" class="form-control" id="phone" name="Phone Number" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="address" class="form-label">Property Address</label>
+                                        <input type="text" class="form-control" id="address" name="Property Address" placeholder="Street address, city, postcode">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="service" class="form-label">Service Required *</label>
+                                        <select class="form-select" id="service" name="Service Required" required>
+                                            <option value="" selected>Please select...</option>
+                                            <option value="Home Extension">Home Extension</option>
+                                            <option value="Loft Conversion">Loft Conversion</option>
+                                            <option value="Bespoke Joinery">Bespoke Joinery</option>
+                                            <option value="Property Renovation">Property Renovation</option>
+                                            <option value="Roofing Services">Roofing Services</option>
+                                            <option value="General Building Work">General Building Work</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="budget" class="form-label">Estimated Budget</label>
+                                        <select class="form-select" id="budget" name="Estimated Budget">
+                                            <option value="" selected>Please select...</option>
+                                            <option value="Under £10,000">Under £10,000</option>
+                                            <option value="£10,000 - £25,000">£10,000 - £25,000</option>
+                                            <option value="£25,000 - £50,000">£25,000 - £50,000</option>
+                                            <option value="£50,000 - £100,000">£50,000 - £100,000</option>
+                                            <option value="Over £100,000">Over £100,000</option>
+                                            <option value="Not sure yet">Not sure yet</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Project Details *</label>
+                                        <textarea class="form-control" id="message" name="Project Details" rows="5" placeholder="Please provide details about your project..." required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="consent" name="Consent" value="yes" required>
+                                            <label class="form-check-label" for="consent">
+                                                I agree to be contacted about my enquiry *
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" id="contactForm-button" class="btn btn-primary btn-lg w-100">
+                                            <i class="bi bi-send me-2"></i> Send Enquiry
+                                        </button>
+                                        <p id="contactForm-status" class="mt-3 text-center fw-semibold"></p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-lg-5">
+                    <div class="mb-4">
+                        <h2 class="mb-4">Contact Information</h2>
+                        <p class="text-muted">Get in touch with us directly using the details below, or fill out the form and we'll contact you.</p>
+                    </div>
+
+                    <!-- Contact Cards -->
+                    <div class="card shadow-sm border-0 mb-3">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start">
+                                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; flex-shrink: 0;">
+                                    <i class="bi bi-telephone-fill fs-5"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-2">Phone</h5>
+                                    <p class="text-muted mb-1">07977 003176</p>
+                                    <small class="text-muted">Mon - Fri: 8:00 AM - 5:00 PM</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card shadow-sm border-0 mb-3">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start">
+                                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; flex-shrink: 0;">
+                                    <i class="bi bi-envelope-fill fs-5"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-2">Email</h5>
+                                    <p class="text-muted mb-1">chris.beresford@hotmail.com</p>
+                                    <small class="text-muted">We aim to respond within 24 hours</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card shadow-sm border-0 mb-3">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start">
+                                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; flex-shrink: 0;">
+                                    <i class="bi bi-geo-alt-fill fs-5"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-2">Location</h5>
+                                    <p class="text-muted mb-1">Alnwick, Northumberland</p>
+                                    <small class="text-muted">Serving Alnwick, Morpeth, Ponteland & surrounding areas</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card shadow-sm border-0 mb-4">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start">
+                                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; flex-shrink: 0;">
+                                    <i class="bi bi-clock-fill fs-5"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-2">Business Hours</h5>
+                                    <p class="text-muted mb-0">
+                                        Monday - Friday: 8:00 AM - 5:00 PM<br>
+                                        Saturday: Closed<br>
+                                        Sunday: Closed
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Emergency Contact -->
+                    <div class="alert alert-info">
+                        <h6 class="alert-heading"><i class="bi bi-info-circle me-2"></i> Emergency Repairs</h6>
+                        <p class="mb-0 small">For urgent repair work, please call us during business hours. We offer emergency callout services for existing customers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="display-6 fw-bold">Our Service Area</h2>
+                <p class="text-muted">We cover Northumberland and surrounding areas</p>
+            </div>
+            <div class="card shadow-sm border-0">
+                <div class="card-body p-0">
+                    <div class="ratio ratio-21x9">
+                        <img src="images/woodcabin3.jpeg" class="w-100" alt="Quality Building Work">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold">Frequently Asked Questions</h2>
+                <p class="text-muted">Quick answers to common questions</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Do you offer free quotes?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we provide free, no-obligation quotes for all our services. Simply fill out the contact form or give us a call to arrange a site visit.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    How long does a typical project take?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Every project is different, and timescales depend on the scope and complexity of the work involved. Get in touch and we'll be happy to discuss your project in more detail.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Do you help with planning permission?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we can guide you through the planning permission and building regulations process. We work with trusted architects and can manage all necessary applications on your behalf.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    What areas do you cover?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We primarily serve Northumberland, including Alnwick, Morpeth, Ponteland, Berwick-upon-Tweed, Hexham, and surrounding areas. If you're unsure whether we cover your area, please get in touch and we'll be happy to discuss your project.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-4">Ready to Get Started?</h2>
+            <p class="lead mb-4">Contact us today and let's turn your vision into reality</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="tel:07977003176" class="btn btn-light btn-lg">
+                    <i class="bi bi-telephone me-2"></i> Call Now
+                </a>
+                <a href="mailto:chris.beresford@hotmail.com" class="btn btn-outline-light btn-lg">
+                    <i class="bi bi-envelope me-2"></i> Email Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="fw-bold mb-3"><i class="bi bi-hammer"></i> C.A. Beresford</h5>
+                    <p class="text-muted">Quality building and joinery services across Northumberland.</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html" class="text-muted text-decoration-none">Services</a></li>
+                        <li><a href="gallery.html" class="text-muted text-decoration-none">Gallery</a></li>
+                        <li><a href="testimonials.html" class="text-muted text-decoration-none">Testimonials</a></li>
+                        <li><a href="contact.html" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Contact Info</h5>
+                    <p class="text-muted mb-2"><i class="bi bi-telephone"></i> 07977 003176</p>
+                    <p class="text-muted mb-2"><i class="bi bi-envelope"></i> chris.beresford@hotmail.com</p>
+                    <p class="text-muted"><i class="bi bi-geo-alt"></i> Alnwick, Northumberland</p>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="text-center text-muted">
+                <p class="mb-0">&copy; 2026 C.A. Beresford. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var form = document.getElementById('contactForm');
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById('contactForm-status');
+            var button = document.getElementById('contactForm-button');
+            var data = new FormData(event.target);
+
+            button.disabled = true;
+            button.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span> Sending...';
+            status.innerHTML = '';
+
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: { 'Accept': 'application/json' }
+            }).then(response => {
+                if (response.ok) {
+                    status.className = 'mt-3 text-center fw-semibold text-success';
+                    status.innerHTML = 'Thank you for your enquiry! We will be in touch shortly.';
+                    form.reset();
+                } else {
+                    response.json().then(data => {
+                        status.className = 'mt-3 text-center fw-semibold text-danger';
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data['errors'].map(error => error['message']).join(', ');
+                        } else {
+                            status.innerHTML = 'Oops! There was a problem submitting your form. Please try again or call us directly.';
+                        }
+                    });
+                }
+            }).catch(() => {
+                status.className = 'mt-3 text-center fw-semibold text-danger';
+                status.innerHTML = 'Oops! There was a problem submitting your form. Please try again or call us directly.';
+            }).finally(() => {
+                button.disabled = false;
+                button.innerHTML = '<i class="bi bi-send me-2"></i> Send Enquiry';
+            });
+        }
+
+        form.addEventListener('submit', handleSubmit);
+    </script>
+</body>
+</html>

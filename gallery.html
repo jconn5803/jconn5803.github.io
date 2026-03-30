@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - C.A. Beresford Building & Joinery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-hammer"></i> C.A. Beresford
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="areas.html">Areas We Cover</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white py-5">
+        <div class="container text-center py-5">
+            <h1 class="display-4 fw-bold">Our Work</h1>
+            <p class="lead">Browse our portfolio of completed building and joinery projects</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+                <button class="btn btn-primary active" data-filter="all">All Projects</button>
+                <button class="btn btn-outline-primary" data-filter="extensions">Extensions</button>
+                <button class="btn btn-outline-primary" data-filter="loft">Loft & Dormers</button>
+                <button class="btn btn-outline-primary" data-filter="joinery">Joinery</button>
+                <button class="btn btn-outline-primary" data-filter="roofing">Roofing</button>
+                <button class="btn btn-outline-primary" data-filter="trusses">Roof Trusses</button>
+                <button class="btn btn-outline-primary" data-filter="outdoor">Outdoor Structures</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4" id="galleryGrid">
+                
+                <!-- Extensions -->
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="extensions">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/modern-house-extension.jpeg" class="card-img-top" alt="Modern House Extension">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Extension</span>
+                            <h5 class="card-title">Modern House Extension</h5>
+                            <p class="card-text text-muted">Contemporary extension with quality finishes and seamless integration.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="extensions">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/porch.jpeg" class="card-img-top" alt="Porch Construction">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Extension</span>
+                            <h5 class="card-title">Porch Construction</h5>
+                            <p class="card-text text-muted">Custom-built porch adding character and practical entrance space.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Loft & Dormers -->
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="loft">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/dormer-roof.jpeg" class="card-img-top" alt="Dormer Roof Conversion">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Loft Conversion</span>
+                            <h5 class="card-title">Dormer Roof Conversion</h5>
+                            <p class="card-text text-muted">Spacious dormer loft conversion maximising headroom and light.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="loft">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/dormer-roof2.jpeg" class="card-img-top" alt="Dormer Installation">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Loft Conversion</span>
+                            <h5 class="card-title">Dormer Installation</h5>
+                            <p class="card-text text-muted">Quality dormer construction creating additional living space.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Joinery -->
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="joinery">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/kitchen-units.jpeg" class="card-img-top" alt="Bespoke Kitchen Units">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Joinery</span>
+                            <h5 class="card-title">Bespoke Kitchen Units</h5>
+                            <p class="card-text text-muted">Custom-made kitchen cabinetry with premium materials.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="joinery">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/staircase.jpeg" class="card-img-top" alt="Custom Staircase">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Joinery</span>
+                            <h5 class="card-title">Bespoke Staircase</h5>
+                            <p class="card-text text-muted">Handcrafted staircase showcasing traditional joinery skills.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="joinery">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/wardrobe.jpeg" class="card-img-top" alt="Fitted Wardrobe">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Joinery</span>
+                            <h5 class="card-title">Fitted Wardrobe</h5>
+                            <p class="card-text text-muted">Custom fitted wardrobe maximising storage with elegant design.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="joinery">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/wardrobe2.jpeg" class="card-img-top" alt="Built-in Wardrobes">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Joinery</span>
+                            <h5 class="card-title">Built-in Wardrobes</h5>
+                            <p class="card-text text-muted">Bespoke built-in storage solutions tailored to room dimensions.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="joinery">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/wardrobe-3.jpeg" class="card-img-top" alt="Fitted Wardrobes">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Joinery</span>
+                            <h5 class="card-title">Fitted Wardrobes</h5>
+                            <p class="card-text text-muted">Custom fitted wardrobes designed to maximise your storage space.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="joinery">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/bannister-1.jpeg" class="card-img-top" alt="Bespoke Bannister">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Joinery</span>
+                            <h5 class="card-title">Handcrafted Bannister</h5>
+                            <p class="card-text text-muted">Beautifully crafted bannister showcasing traditional joinery skills.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="joinery">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/bannister-2.jpeg" class="card-img-top" alt="Custom Bannister">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Joinery</span>
+                            <h5 class="card-title">Custom Bannister</h5>
+                            <p class="card-text text-muted">Bespoke bannister installation with quality craftsmanship.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="joinery">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/custom-bannister.jpeg" class="card-img-top" alt="Volute Detail">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Joinery</span>
+                            <h5 class="card-title">Volute Detail</h5>
+                            <p class="card-text text-muted">Hand-turned volute at the end of a bannister, demonstrating fine craftsmanship.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="joinery">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/wooden-door.jpeg" class="card-img-top" alt="Wooden Door">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Joinery</span>
+                            <h5 class="card-title">Handmade Wooden Door</h5>
+                            <p class="card-text text-muted">Custom wooden door crafted by our skilled joiners.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="joinery">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/wooden-furniture.jpeg" class="card-img-top" alt="Custom Furniture">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Joinery</span>
+                            <h5 class="card-title">Bespoke Furniture</h5>
+                            <p class="card-text text-muted">Custom chest of drawers being crafted in our workshop.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="joinery">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/custom-wood-gate-fence.jpeg" class="card-img-top" alt="Wooden Gate and Fence">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Joinery</span>
+                            <h5 class="card-title">Wooden Gate and Fence</h5>
+                            <p class="card-text text-muted">Custom built wooden gate and fencing for your property.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Roofing -->
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="roofing">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/roof-construction.jpeg" class="card-img-top" alt="Roof Construction">
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Roofing</span>
+                            <h5 class="card-title">Roof Construction</h5>
+                            <p class="card-text text-muted">New roof structure built to exacting standards with quality timber.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="roofing">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/roof-construction2.jpeg" class="card-img-top" alt="Timber Roof Frame">
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Roofing</span>
+                            <h5 class="card-title">Timber Roof Frame</h5>
+                            <p class="card-text text-muted">Traditional roof framing with precision-cut timber construction.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="roofing">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/roof-construction3.jpeg" class="card-img-top" alt="Roof Build Progress">
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Roofing</span>
+                            <h5 class="card-title">Roof Build Project</h5>
+                            <p class="card-text text-muted">Complete roof construction demonstrating structural expertise.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="roofing">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/roof-construction4.jpeg" class="card-img-top" alt="New Roof Installation">
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Roofing</span>
+                            <h5 class="card-title">New Roof Installation</h5>
+                            <p class="card-text text-muted">Full roof installation with attention to structural integrity.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="roofing">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/slate-roof.jpeg" class="card-img-top" alt="Slate Roofing">
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Roofing</span>
+                            <h5 class="card-title">Slate Roof</h5>
+                            <p class="card-text text-muted">Traditional slate roofing with expert installation.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="roofing">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/leadwork-on-summer-room.jpeg" class="card-img-top" alt="Leadwork">
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Roofing</span>
+                            <h5 class="card-title">Roofing Leadwork</h5>
+                            <p class="card-text text-muted">Professional leadwork on a summer room extension.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Roof Trusses -->
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="trusses">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/roof-truss-1.jpeg" class="card-img-top" alt="Roof Truss Construction">
+                        <div class="card-body">
+                            <span class="badge bg-dark mb-2">Roof Trusses</span>
+                            <h5 class="card-title">Roof Truss Interior View</h5>
+                            <p class="card-text text-muted">View from inside a building under construction showing expert roof framing.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="trusses">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/roof-truss-2.jpeg" class="card-img-top" alt="Manufactured Roof Trusses">
+                        <div class="card-body">
+                            <span class="badge bg-dark mb-2">Roof Trusses</span>
+                            <h5 class="card-title">In-house Truss Manufacturing</h5>
+                            <p class="card-text text-muted">Roof trusses manufactured by our team to exact specifications.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="trusses">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/roof-truss-3.jpeg" class="card-img-top" alt="Roof Truss Installation">
+                        <div class="card-body">
+                            <span class="badge bg-dark mb-2">Roof Trusses</span>
+                            <h5 class="card-title">Building Under Construction</h5>
+                            <p class="card-text text-muted">Building in construction with open roof showing truss installation.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="trusses">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/roof-truss-4.jpeg" class="card-img-top" alt="Roof Truss Project">
+                        <div class="card-body">
+                            <span class="badge bg-dark mb-2">Roof Trusses</span>
+                            <h5 class="card-title">Truss Installation Progress</h5>
+                            <p class="card-text text-muted">Alternative view of roof truss construction in progress.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="trusses">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/roof-truss-5.jpeg" class="card-img-top" alt="Residential Roof Trusses">
+                        <div class="card-body">
+                            <span class="badge bg-dark mb-2">Roof Trusses</span>
+                            <h5 class="card-title">Residential Roof Project</h5>
+                            <p class="card-text text-muted">Roof truss installation on a residential building project.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="trusses">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/roof-truss-6.jpeg" class="card-img-top" alt="Commercial Roof Trusses">
+                        <div class="card-body">
+                            <span class="badge bg-dark mb-2">Roof Trusses</span>
+                            <h5 class="card-title">Custom Truss Build</h5>
+                            <p class="card-text text-muted">Another project showcasing our roof truss manufacturing expertise.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outdoor Structures -->
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="outdoor">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/woodcabin.jpeg" class="card-img-top" alt="Wood Cabin">
+                        <div class="card-body">
+                            <span class="badge bg-secondary mb-2">Outdoor</span>
+                            <h5 class="card-title">Custom Wood Cabin</h5>
+                            <p class="card-text text-muted">Bespoke timber cabin perfect for garden office or studio.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="outdoor">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/woodcabin2.jpeg" class="card-img-top" alt="Garden Building">
+                        <div class="card-body">
+                            <span class="badge bg-secondary mb-2">Outdoor</span>
+                            <h5 class="card-title">Garden Building</h5>
+                            <p class="card-text text-muted">Quality timber construction for outdoor living solutions.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="outdoor">
+                    <div class="card shadow-sm h-100 hover-card">
+                        <img src="images/woodcabin3.jpeg" class="card-img-top" alt="Timber Outbuilding">
+                        <div class="card-body">
+                            <span class="badge bg-secondary mb-2">Outdoor</span>
+                            <h5 class="card-title">Timber Outbuilding</h5>
+                            <p class="card-text text-muted">Handcrafted outdoor structure built to withstand the elements.</p>
+                            <small class="text-muted"><i class="bi bi-geo-alt"></i> Northumberland</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Stats -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <h2 class="display-4 fw-bold text-primary mb-2">500+</h2>
+                        <p class="text-muted mb-0">Projects Completed</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <h2 class="display-4 fw-bold text-primary mb-2">25+</h2>
+                        <p class="text-muted mb-0">Years Experience</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <h2 class="display-4 fw-bold text-primary mb-2">98%</h2>
+                        <p class="text-muted mb-0">Customer Satisfaction</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <h2 class="display-4 fw-bold text-primary mb-2">100%</h2>
+                        <p class="text-muted mb-0">Local & Trusted</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-4">Inspired by Our Work?</h2>
+            <p class="lead mb-4">Let's discuss how we can bring your vision to life</p>
+            <a href="contact.html" class="btn btn-light btn-lg">Get A Free Quote</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="fw-bold mb-3"><i class="bi bi-hammer"></i> C.A. Beresford</h5>
+                    <p class="text-muted">Quality building and joinery services across Northumberland.</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html" class="text-muted text-decoration-none">Services</a></li>
+                        <li><a href="gallery.html" class="text-muted text-decoration-none">Gallery</a></li>
+                        <li><a href="testimonials.html" class="text-muted text-decoration-none">Testimonials</a></li>
+                        <li><a href="contact.html" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Contact Info</h5>
+                    <p class="text-muted mb-2"><i class="bi bi-telephone"></i> 07977 003176</p>
+                    <p class="text-muted mb-2"><i class="bi bi-envelope"></i> chris.beresford@hotmail.com</p>
+                    <p class="text-muted"><i class="bi bi-geo-alt"></i> Alnwick, Northumberland</p>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="text-center text-muted">
+                <p class="mb-0">&copy; 2026 C.A. Beresford. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Simple gallery filter functionality
+        const filterButtons = document.querySelectorAll('[data-filter]');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+                
+                // Update active button
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active', 'btn-primary');
+                    btn.classList.add('btn-outline-primary');
+                });
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('active', 'btn-primary');
+
+                // Filter gallery items
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
