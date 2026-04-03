@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building & Joinery Services in Darras Hall | C.A. Beresford</title>
+    <meta name="description" content="C.A. Beresford provides expert building and joinery services in Darras Hall, Northumberland. Extensions, loft conversions, bespoke joinery, roofing and more. Over 25 years experience.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .hero-section-darras {
+            min-height: min(80vh, 800px);
+            margin-top: -92px;
+            padding-top: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+            background:
+                linear-gradient(to bottom, rgba(5, 15, 25, 0.30) 0%, rgba(5, 15, 25, 0.65) 100%),
+                url('images/modern-house-extension.jpeg') center/cover;
+        }
+
+        .location-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            background: rgba(255, 255, 255, 0.18);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 50px;
+            padding: 0.4rem 1.1rem;
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 1.25rem;
+        }
+
+        .service-card {
+            border-radius: 20px;
+            border: 1px solid var(--line);
+            background: rgba(255, 255, 255, 0.92);
+            box-shadow: var(--card-shadow);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--card-shadow-hover);
+        }
+
+        .service-card .card-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, var(--brand-600), var(--brand-300));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            flex-shrink: 0;
+        }
+
+        .stat-block {
+            padding: 1.75rem;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid var(--line);
+            box-shadow: var(--card-shadow);
+            text-align: center;
+        }
+
+        .stat-block .stat-number {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: 2.6rem;
+            line-height: 1;
+            color: var(--brand-600);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .testimonial-card {
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid var(--line);
+            box-shadow: var(--card-shadow);
+            padding: 1.75rem;
+        }
+
+        .stars {
+            color: #f5a623;
+            font-size: 0.95rem;
+            letter-spacing: 0.1em;
+        }
+
+        .area-highlight {
+            background: linear-gradient(120deg, rgba(31, 91, 153, 0.06), rgba(47, 116, 189, 0.04));
+            border-left: 4px solid var(--brand-500);
+            border-radius: 0 12px 12px 0;
+            padding: 1.25rem 1.5rem;
+        }
+
+        .process-step {
+            position: relative;
+            padding-left: 4rem;
+        }
+
+        .process-step .step-number {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--brand-600), var(--brand-500));
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-hammer"></i> C.A. Beresford
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="areas.html">Areas We Cover</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section-darras">
+        <div class="hero-overlay">
+            <div class="container text-center text-white">
+                <div class="location-badge">
+                    <i class="bi bi-geo-alt-fill"></i> Darras Hall, Northumberland
+                </div>
+                <h1 class="display-3 fw-bold mb-4">Building &amp; Joinery Services<br>in Darras Hall</h1>
+                <p class="lead mb-5" style="max-width: 600px; margin: 0 auto 2rem;">Trusted craftsmanship for Darras Hall's finest homes — from bespoke joinery and loft conversions to full extensions and roofing.</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="contact.html" class="btn btn-primary btn-lg px-4">Get a Free Quote</a>
+                    <a href="#services" class="btn btn-outline-light btn-lg px-4">See Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Stats -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-3">
+                    <div class="stat-block">
+                        <span class="stat-number">25+</span>
+                        <p class="text-muted mb-0" style="font-size:0.85rem; font-weight:600;">Years Experience</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-block">
+                        <span class="stat-number">500+</span>
+                        <p class="text-muted mb-0" style="font-size:0.85rem; font-weight:600;">Projects Completed</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-block">
+                        <span class="stat-number">100%</span>
+                        <p class="text-muted mb-0" style="font-size:0.85rem; font-weight:600;">Satisfaction Guaranteed</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-block">
+                        <span class="stat-number">Local</span>
+                        <p class="text-muted mb-0" style="font-size:0.85rem; font-weight:600;">Northumberland Based</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About in Darras Hall -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <img src="images/roof-construction.jpeg" class="img-fluid rounded shadow" alt="C.A. Beresford working in Darras Hall">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Trusted Builders in Darras Hall</h2>
+                    <p class="text-muted">Darras Hall is home to some of Northumberland's most distinguished properties, and at C.A. Beresford we understand that the quality of your home demands equally exceptional craftsmanship.</p>
+                    <p class="text-muted">Based in Alnwick with over 25 years of experience, our team regularly works throughout the Darras Hall estate, delivering everything from beautifully crafted extensions to complete property renovations. We treat every project — large or small — with the same care and precision.</p>
+                    <div class="area-highlight mt-4">
+                        <p class="mb-0 fw-semibold" style="color:var(--ink-700);">
+                            <i class="bi bi-pin-map-fill text-primary me-2"></i>
+                            We cover all roads and streets within the Darras Hall estate and the wider Ponteland area.
+                        </p>
+                    </div>
+                    <div class="row mt-4 g-3">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-shield-check-fill text-primary fs-5"></i>
+                                <span class="fw-semibold" style="font-size:0.9rem;">Fully Insured</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-award-fill text-primary fs-5"></i>
+                                <span class="fw-semibold" style="font-size:0.9rem;">25+ Years Experience</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-people-fill text-primary fs-5"></i>
+                                <span class="fw-semibold" style="font-size:0.9rem;">Local Workforce</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-chat-dots-fill text-primary fs-5"></i>
+                                <span class="fw-semibold" style="font-size:0.9rem;">Free Consultations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5" id="services">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Our Services in Darras Hall</h2>
+                <p class="text-muted" style="max-width:560px; margin:0 auto;">Every service is delivered to the same exacting standard that Darras Hall homeowners expect — on time, on budget, and built to last.</p>
+            </div>
+            <div class="row g-4">
+
+                <!-- Home Extensions -->
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card h-100 p-4">
+                        <div class="card-icon">
+                            <i class="bi bi-house-add"></i>
+                        </div>
+                        <h4 class="mb-2">Home Extensions</h4>
+                        <p class="text-muted mb-3">Expand your Darras Hall property with a seamlessly integrated single or double-storey extension. We handle everything from planning through final finish.</p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Single &amp; Two-Storey Extensions</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Kitchen Extensions</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Side Return Extensions</li>
+                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Quality Brickwork &amp; Finishing</li>
+                        </ul>
+                        <a href="darras-hall-extensions.html" class="btn btn-outline-primary btn-sm mt-auto">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Loft Conversions -->
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card h-100 p-4">
+                        <div class="card-icon">
+                            <i class="bi bi-building"></i>
+                        </div>
+                        <h4 class="mb-2">Loft Conversions</h4>
+                        <p class="text-muted mb-3">Maximise the value and space of your Darras Hall home with a professionally designed and built loft conversion — bedrooms, offices, and playrooms.</p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Dormer Conversions</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Velux Conversions</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Hip to Gable Conversions</li>
+                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Structural Carpentry &amp; Roofing</li>
+                        </ul>
+                        <a href="darras-hall-loft-conversions.html" class="btn btn-outline-primary btn-sm mt-auto">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Bespoke Joinery -->
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card h-100 p-4">
+                        <div class="card-icon">
+                            <i class="bi bi-rulers"></i>
+                        </div>
+                        <h4 class="mb-2">Bespoke Joinery</h4>
+                        <p class="text-muted mb-3">Hand-crafted joinery made to your exact specification — fitted wardrobes, staircases, bespoke doors, cabinetry, and more for the most discerning Darras Hall homes.</p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Custom Fitted Wardrobes</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Bespoke Staircases &amp; Bannisters</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Handcrafted Wooden Doors</li>
+                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Wooden Gates &amp; Fencing</li>
+                        </ul>
+                        <a href="darras-hall-bespoke-joinery.html" class="btn btn-outline-primary btn-sm mt-auto">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Property Renovations -->
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card h-100 p-4">
+                        <div class="card-icon">
+                            <i class="bi bi-tools"></i>
+                        </div>
+                        <h4 class="mb-2">Property Renovations</h4>
+                        <p class="text-muted mb-3">Full or partial property renovations carried out to the very highest standard. We manage every aspect so you don't have to.</p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Full House Renovations</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Kitchen &amp; Bathroom Refits</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Period Property Restoration</li>
+                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Structural Alterations</li>
+                        </ul>
+                        <a href="darras-hall-renovations.html" class="btn btn-outline-primary btn-sm mt-auto">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Roofing -->
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card h-100 p-4">
+                        <div class="card-icon">
+                            <i class="bi bi-triangle"></i>
+                        </div>
+                        <h4 class="mb-2">Roofing Services</h4>
+                        <p class="text-muted mb-3">Expert roofing for new builds, repairs, and full replacements — including traditional slate roofing and specialist leadwork suited to Darras Hall's premium properties.</p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>New Roof Installation</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Slate Roofing &amp; Leadwork</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Roof Repairs &amp; Maintenance</li>
+                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Guttering &amp; Fascias</li>
+                        </ul>
+                        <a href="darras-hall-roofing.html" class="btn btn-outline-primary btn-sm mt-auto">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- General Building -->
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card h-100 p-4">
+                        <div class="card-icon">
+                            <i class="bi bi-bricks"></i>
+                        </div>
+                        <h4 class="mb-2">General Building Work</h4>
+                        <p class="text-muted mb-3">From small repairs to large-scale construction, our experienced team handles all building work across Darras Hall with the same professional care.</p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Brickwork &amp; Blockwork</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Plastering &amp; Rendering</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Groundworks &amp; Foundations</li>
+                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Property Maintenance</li>
+                        </ul>
+                        <a href="darras-hall-general-building.html" class="btn btn-outline-primary btn-sm mt-auto">Learn More</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center mt-5">
+                <a href="services.html" class="btn btn-primary btn-lg px-5">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Teaser -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold">Our Recent Work</h2>
+                <p class="text-muted">A selection of projects completed across Northumberland</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 overflow-hidden" style="border-radius:18px;">
+                        <div class="ratio ratio-4x3">
+                            <img src="images/modern-house-extension.jpeg" class="card-img-top" alt="Home Extension" style="object-fit:cover;">
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Extension</span>
+                            <h5 class="card-title mb-1">Two-Storey Extension</h5>
+                            <p class="card-text text-muted" style="font-size:0.88rem;">Full two-storey extension creating an open-plan kitchen and additional master suite.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 overflow-hidden" style="border-radius:18px;">
+                        <div class="ratio ratio-4x3">
+                            <img src="images/dormer-roof.jpeg" class="card-img-top" alt="Loft Conversion" style="object-fit:cover;">
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Loft Conversion</span>
+                            <h5 class="card-title mb-1">Dormer Loft Conversion</h5>
+                            <p class="card-text text-muted" style="font-size:0.88rem;">Stunning dormer conversion transforming an unused loft into a light-filled bedroom.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 overflow-hidden" style="border-radius:18px;">
+                        <div class="ratio ratio-4x3">
+                            <img src="images/custom-wood-gate-fence.jpeg" class="card-img-top" alt="Bespoke Joinery" style="object-fit:cover;">
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Bespoke Joinery</span>
+                            <h5 class="card-title mb-1">Bespoke Wooden Gates</h5>
+                            <p class="card-text text-muted" style="font-size:0.88rem;">Hand-built hardwood gates and fencing crafted to complement the property's character.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="gallery.html" class="btn btn-primary btn-lg">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold">How We Work</h2>
+                <p class="text-muted">Simple, straightforward, and always focused on your needs</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h5 class="mb-2">Get in Touch</h5>
+                        <p class="text-muted" style="font-size:0.9rem;">Call or email us to discuss your project. We'll listen to your needs and answer any questions.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h5 class="mb-2">Free Site Visit</h5>
+                        <p class="text-muted" style="font-size:0.9rem;">We visit your Darras Hall property at a time that suits you to assess the project in person.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h5 class="mb-2">Detailed Quote</h5>
+                        <p class="text-muted" style="font-size:0.9rem;">We provide a clear, itemised quote with no hidden costs or surprises.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h5 class="mb-2">Work Begins</h5>
+                        <p class="text-muted" style="font-size:0.9rem;">Our team gets to work — keeping you updated throughout until your project is complete.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold">What Our Clients Say</h2>
+                <p class="text-muted">Reviews from homeowners across Northumberland</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card h-100">
+                        <div class="stars mb-2">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="text-muted mb-3">"C.A. Beresford built a beautiful rear extension for us. The workmanship was outstanding and they kept the site clean and tidy throughout. Couldn't recommend them more highly."</p>
+                        <p class="fw-bold mb-0" style="font-size:0.9rem;">Sarah M.</p>
+                        <p class="text-muted mb-0" style="font-size:0.82rem;">Ponteland area</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card h-100">
+                        <div class="stars mb-2">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="text-muted mb-3">"We had a loft conversion done and the results are absolutely superb. The team was professional, punctual, and very skilled. We use the new room every day."</p>
+                        <p class="fw-bold mb-0" style="font-size:0.9rem;">David T.</p>
+                        <p class="text-muted mb-0" style="font-size:0.82rem;">Northumberland</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card h-100">
+                        <div class="stars mb-2">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="text-muted mb-3">"Chris and his team fitted bespoke fitted wardrobes and a new staircase bannister. The attention to detail was second to none — truly artisan quality work."</p>
+                        <p class="fw-bold mb-0" style="font-size:0.9rem;">Helen R.</p>
+                        <p class="text-muted mb-0" style="font-size:0.82rem;">Northumberland</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="testimonials.html" class="btn btn-outline-primary btn-lg">Read More Reviews</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-3">Ready to Start Your Project in Darras Hall?</h2>
+            <p class="lead mb-4" style="opacity:0.9;">Contact us today for a free, no-obligation quote. We're ready to help.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="contact.html" class="btn btn-light btn-lg px-5">Get a Free Quote</a>
+                <a href="tel:07977003176" class="btn btn-outline-light btn-lg px-5">
+                    <i class="bi bi-telephone me-2"></i>07977 003176
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="fw-bold mb-3"><i class="bi bi-hammer"></i> C.A. Beresford</h5>
+                    <p class="text-muted">Quality building and joinery services across Northumberland, including Darras Hall and the wider Ponteland area.</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html" class="text-muted text-decoration-none">Services</a></li>
+                        <li><a href="areas.html" class="text-muted text-decoration-none">Areas We Cover</a></li>
+                        <li><a href="gallery.html" class="text-muted text-decoration-none">Gallery</a></li>
+                        <li><a href="testimonials.html" class="text-muted text-decoration-none">Testimonials</a></li>
+                        <li><a href="contact.html" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Contact Info</h5>
+                    <p class="text-muted mb-2"><i class="bi bi-telephone"></i> <a href="tel:07977003176" class="text-muted text-decoration-none">07977 003176</a></p>
+                    <p class="text-muted mb-2"><i class="bi bi-envelope"></i> <a href="mailto:chris.beresford@hotmail.com" class="text-muted text-decoration-none">chris.beresford@hotmail.com</a></p>
+                    <p class="text-muted"><i class="bi bi-geo-alt"></i> Alnwick, Northumberland</p>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="text-center text-muted">
+                <p class="mb-0">&copy; 2026 C.A. Beresford. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Navbar scroll effect (matches main site behaviour)
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 30) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

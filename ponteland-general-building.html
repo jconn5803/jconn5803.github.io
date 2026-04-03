@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Building in Ponteland | C.A. Beresford</title>
+    <meta name="description" content="General building services in Ponteland — brickwork, plastering, groundworks, garages, porches, structural alterations, and more. C.A. Beresford, Northumberland.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .hero-service { min-height:min(80vh,800px); margin-top:-92px; padding-top:120px; display:flex; align-items:center; justify-content:center; overflow:hidden; position:relative; background: linear-gradient(to bottom,rgba(5,15,25,0.30) 0%,rgba(5,15,25,0.68) 100%), url('images/porch.jpeg') center/cover; }
+        .dual-badge { display:inline-flex; align-items:center; gap:0.45rem; background:rgba(255,255,255,0.18); border:1px solid rgba(255,255,255,0.4); border-radius:50px; padding:0.4rem 1.1rem; font-size:0.82rem; font-weight:600; letter-spacing:0.06em; color:#fff; text-transform:uppercase; margin-bottom:1.25rem; }
+        .stat-block { padding:1.75rem; border-radius:18px; background:rgba(255,255,255,0.92); border:1px solid var(--line); box-shadow:var(--card-shadow); text-align:center; }
+        .stat-block .stat-number { font-family:'DM Serif Display',Georgia,serif; font-size:2.6rem; line-height:1; color:var(--brand-600); display:block; margin-bottom:0.25rem; }
+        .highlight-box { background:linear-gradient(120deg,rgba(31,91,153,0.06),rgba(47,116,189,0.04)); border-left:4px solid var(--brand-500); border-radius:0 12px 12px 0; padding:1.25rem 1.5rem; }
+        .feature-item { display:flex; align-items:flex-start; gap:1rem; padding:1.25rem; border:1px solid var(--line); border-radius:14px; background:rgba(255,255,255,0.92); }
+        .feature-icon { width:48px; height:48px; border-radius:12px; background:linear-gradient(135deg,var(--brand-600),var(--brand-300)); display:flex; align-items:center; justify-content:center; color:#fff; font-size:1.3rem; flex-shrink:0; }
+        .faq-item { border:1px solid var(--line); border-radius:16px; padding:1.5rem; background:rgba(255,255,255,0.92); }
+        .related-card { border-radius:18px; border:1px solid var(--line); background:rgba(255,255,255,0.92); box-shadow:var(--card-shadow); padding:1.5rem; transition:transform 0.25s ease,box-shadow 0.25s ease; }
+        .related-card:hover { transform:translateY(-3px); box-shadow:var(--card-shadow-hover); }
+        .testimonial-card { border-radius:20px; background:rgba(255,255,255,0.92); border:1px solid var(--line); box-shadow:var(--card-shadow); padding:1.75rem; }
+        .stars { color:#f5a623; letter-spacing:0.1em; }
+        .process-step { position:relative; padding-left:4rem; }
+        .process-step .step-number { position:absolute; left:0; top:0; width:48px; height:48px; border-radius:50%; background:linear-gradient(135deg,var(--brand-600),var(--brand-500)); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'DM Serif Display',Georgia,serif; font-size:1.3rem; flex-shrink:0; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-hammer"></i> C.A. Beresford</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="areas.html">Areas We Cover</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-service">
+        <div class="hero-overlay">
+            <div class="container text-center text-white">
+                <div class="dual-badge"><i class="bi bi-geo-alt-fill"></i> Ponteland &nbsp;·&nbsp; <i class="bi bi-tools"></i> General Building</div>
+                <h1 class="display-3 fw-bold mb-4">General Building Work<br>in Ponteland</h1>
+                <p class="lead mb-5" style="max-width:640px; margin:0 auto 2rem;">From a brick porch to a structural alteration — we're the local builders Ponteland homeowners trust for skilled, reliable general building work. Whether it's a small repair or a significant structural project, we treat every job with the same care and attention to detail.</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="contact.html" class="btn btn-primary btn-lg px-4">Get a Free Quote</a>
+                    <a href="tel:07977003176" class="btn btn-outline-light btn-lg px-4"><i class="bi bi-telephone me-2"></i>07977 003176</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-3"><div class="stat-block"><span class="stat-number">25+</span><p class="text-muted mb-0" style="font-size:0.85rem;font-weight:600;">Years Experience</p></div></div>
+                <div class="col-6 col-md-3"><div class="stat-block"><span class="stat-number">500+</span><p class="text-muted mb-0" style="font-size:0.85rem;font-weight:600;">Projects Completed</p></div></div>
+                <div class="col-6 col-md-3"><div class="stat-block"><span class="stat-number">100%</span><p class="text-muted mb-0" style="font-size:0.85rem;font-weight:600;">Satisfaction Guaranteed</p></div></div>
+                <div class="col-6 col-md-3"><div class="stat-block"><span class="stat-number">Local</span><p class="text-muted mb-0" style="font-size:0.85rem;font-weight:600;">Northumberland Based</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <img src="images/porch.jpeg" class="img-fluid rounded shadow" alt="Brick Porch Ponteland">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4">The Local Builder Ponteland Trusts</h2>
+                    <p class="text-muted">In a community like Ponteland, reputation matters. Local tradespeople who cut corners don't last long when their work is visible on the high street and talked about in the community. Our reputation has been built job by job over more than 25 years, and every project we take on — however small — is treated as a direct reflection of our standards.</p>
+                    <p class="text-muted">We know the local brick types, the soil conditions, the building styles, and the planning sensitivities of the Ponteland area. Whether you need new brickwork that matches an existing wall, or an alteration to a period property that requires sensitivity and skill, we have the experience to do it properly.</p>
+                    <div class="highlight-box mt-4">
+                        <p class="mb-0 fw-semibold" style="color:var(--ink-700);"><i class="bi bi-person-check text-primary me-2"></i>No job is too small. Many of our longest-standing Ponteland clients started with a small repair — and came back for the big projects because we did the small job brilliantly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">General Building Services in Ponteland</h2>
+                <p class="text-muted" style="max-width:600px; margin:0 auto;">Skilled building work across a wide range of project types</p>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="bi bi-bricks"></i></div>
+                        <div><h5 class="mb-1">Brickwork &amp; Blockwork</h5><p class="text-muted mb-0" style="font-size:0.9rem;">New walls, boundary walls, piers, and repairs — using materials matched to your Ponteland property's existing brickwork.</p></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="bi bi-square"></i></div>
+                        <div><h5 class="mb-1">Plastering &amp; Rendering</h5><p class="text-muted mb-0" style="font-size:0.9rem;">Plasterboard, float and set, coving, and external sand-and-cement or monocouche renders — internal and external.</p></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="bi bi-columns-gap"></i></div>
+                        <div><h5 class="mb-1">Groundworks</h5><p class="text-muted mb-0" style="font-size:0.9rem;">Foundations, drainage, concrete slabs, and sub-bases for extensions and new builds across Ponteland's varied ground conditions.</p></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="bi bi-house-door"></i></div>
+                        <div><h5 class="mb-1">Porches &amp; Canopies</h5><p class="text-muted mb-0" style="font-size:0.9rem;">Brick and block porches add kerb appeal and a practical entrance lobby — a popular addition on Ponteland family homes.</p></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="bi bi-car-front"></i></div>
+                        <div><h5 class="mb-1">Garages &amp; Outbuildings</h5><p class="text-muted mb-0" style="font-size:0.9rem;">New-build garages, outbuilding block-work, and conversion of existing structures — ideal use of Ponteland's generous plot sizes.</p></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="bi bi-building-check"></i></div>
+                        <div><h5 class="mb-1">Structural Alterations</h5><p class="text-muted mb-0" style="font-size:0.9rem;">Load-bearing wall removals with correct steelwork, chimney breast removals, and structural openings — all with building regs sign-off.</p></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="bi bi-wrench-adjustable"></i></div>
+                        <div><h5 class="mb-1">Repairs &amp; Remedials</h5><p class="text-muted mb-0" style="font-size:0.9rem;">Damp-proofing, repointing, crack repairs, and general property maintenance for Ponteland's older housing stock.</p></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="bi bi-tree"></i></div>
+                        <div><h5 class="mb-1">Garden Offices &amp; Cabins</h5><p class="text-muted mb-0" style="font-size:0.9rem;">Purpose-built timber garden offices and outbuildings — from a simple hobby shed to a fully insulated home office with power.</p></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="bi bi-brush"></i></div>
+                        <div><h5 class="mb-1">General Property Maintenance</h5><p class="text-muted mb-0" style="font-size:0.9rem;">Ongoing maintenance for Ponteland homeowners — the experienced local contact for jobs that arise year-round.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5"><h2 class="display-6 fw-bold">Recent Work</h2><p class="text-muted">General building projects completed by our team</p></div>
+            <div class="row g-4">
+                <div class="col-md-4"><div class="card border-0 shadow-sm overflow-hidden" style="border-radius:18px;"><div class="ratio ratio-4x3"><img src="images/porch.jpeg" class="card-img-top" alt="Brick Porch" style="object-fit:cover;"></div><div class="card-body"><span class="badge bg-primary mb-2">Building</span><h5 class="card-title mb-1">Brick Porch Construction</h5><p class="card-text text-muted" style="font-size:0.88rem;">New brick porch built to match existing property brickwork exactly — a clean, lasting addition that improves both function and kerb appeal.</p></div></div></div>
+                <div class="col-md-4"><div class="card border-0 shadow-sm overflow-hidden" style="border-radius:18px;"><div class="ratio ratio-4x3"><img src="images/woodcabin2.jpeg" class="card-img-top" alt="Garden Office" style="object-fit:cover;"></div><div class="card-body"><span class="badge bg-primary mb-2">Outbuilding</span><h5 class="card-title mb-1">Garden Office Build</h5><p class="card-text text-muted" style="font-size:0.88rem;">Fully insulated timber garden office with power, plastered and decorated interior, ready for use as a home working space.</p></div></div></div>
+                <div class="col-md-4"><div class="card border-0 shadow-sm overflow-hidden" style="border-radius:18px;"><div class="ratio ratio-4x3"><img src="images/woodcabin3.jpeg" class="card-img-top" alt="Timber Cabin" style="object-fit:cover;"></div><div class="card-body"><span class="badge bg-primary mb-2">Outbuilding</span><h5 class="card-title mb-1">Bespoke Timber Outbuilding</h5><p class="card-text text-muted" style="font-size:0.88rem;">Bespoke timber outbuilding constructed on a prepared concrete slab — versatile enough for storage, workshop, or leisure use.</p></div></div></div>
+            </div>
+            <div class="text-center mt-4"><a href="gallery.html" class="btn btn-primary btn-lg">View Full Gallery</a></div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5"><h2 class="display-6 fw-bold">How We Work</h2><p class="text-muted">Simple, reliable, no surprises</p></div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-3"><div class="process-step"><div class="step-number">1</div><h5 class="mb-2">Site Visit &amp; Scoping</h5><p class="text-muted" style="font-size:0.9rem;">We visit your Ponteland property, assess the project, and discuss requirements in detail — so the quote is accurate and based on what the job actually involves.</p></div></div>
+                <div class="col-md-6 col-lg-3"><div class="process-step"><div class="step-number">2</div><h5 class="mb-2">Written Quotation</h5><p class="text-muted" style="font-size:0.9rem;">A clear written quote before any work begins — no verbal estimates that later expand. You know exactly what you're agreeing to.</p></div></div>
+                <div class="col-md-6 col-lg-3"><div class="process-step"><div class="step-number">3</div><h5 class="mb-2">Skilled Execution</h5><p class="text-muted" style="font-size:0.9rem;">Work carried out by our own experienced tradespeople — not passed to subcontractors. Your Ponteland property is treated with respect on every visit.</p></div></div>
+                <div class="col-md-6 col-lg-3"><div class="process-step"><div class="step-number">4</div><h5 class="mb-2">Clean &amp; Complete</h5><p class="text-muted" style="font-size:0.9rem;">We tidy up fully at the end of each working day and leave your property in good order when the project is finished.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="py-5 bg-light">
+        <div class="container" style="max-width:800px;">
+            <div class="text-center mb-5"><h2 class="display-6 fw-bold">Common Questions</h2><p class="text-muted">From Ponteland homeowners about general building work</p></div>
+            <div class="d-flex flex-column gap-3">
+                <div class="faq-item"><h5 class="mb-2">Do you take on smaller jobs, or only large projects?</h5><p class="text-muted mb-0">We take on jobs of all sizes in Ponteland — from repointing a garden wall or building a brick step, right through to a full extension or structural alteration. Our philosophy is that a small job done well is the best introduction to what we do. Many of our clients came to us originally with a modest repair and have since trusted us with major works.</p></div>
+                <div class="faq-item"><h5 class="mb-2">Can you match the existing brickwork on my Ponteland property?</h5><p class="text-muted mb-0">Matching brickwork is something we take seriously. Ponteland has a mix of brick types across different eras and developers, and a blatant mismatch on new brickwork is one of the most common complaints about building contractors. We take time to source appropriate materials and will discuss brick selection with you before any work starts.</p></div>
+                <div class="faq-item"><h5 class="mb-2">Do you handle the building regulations approval for structural work?</h5><p class="text-muted mb-0">Yes — for structural work such as wall removals, new lintels, and structural openings, we ensure the work is carried out to building regulations and that the appropriate sign-off (either full plans or building notice) is in place. We'll advise on what's required for your specific project at the initial visit.</p></div>
+                <div class="faq-item"><h5 class="mb-2">Can you carry out work on a Ponteland property while it's tenanted or occupied?</h5><p class="text-muted mb-0">For most general building work, yes — we work carefully around occupied properties and minimise disruption to occupants. We'll discuss specific access arrangements, working hours, and any necessary temporary protections at the planning stage so there are no surprises for you or your household.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="py-5">
+        <div class="container" style="max-width:700px;">
+            <div class="testimonial-card text-center">
+                <div class="stars mb-3" style="font-size:1.2rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="lead fst-italic mb-4">"We had brickwork pointing done, a garden wall rebuilt, and a new step to the back door — all on the same visit. Excellent workmanship throughout, tidy, and the brickwork match is perfect. Already recommended Chris to two neighbours."</p>
+                <p class="fw-bold mb-0">Paul M.</p>
+                <p class="text-muted mb-3" style="font-size:0.85rem;">Ponteland</p>
+                <a href="contact.html" class="btn btn-primary px-5">Get a Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5"><h2 class="display-6 fw-bold">Other Services in Ponteland</h2><p class="text-muted">Our full service range for Ponteland properties</p></div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4"><a href="ponteland-extensions.html" class="text-decoration-none"><div class="related-card h-100"><i class="bi bi-house-add text-primary fs-2 mb-3 d-block"></i><h5 class="mb-2">Home Extensions</h5><p class="text-muted mb-0" style="font-size:0.9rem;">Full single and double-storey extensions for Ponteland properties — design, build, and finish in one contract.</p></div></a></div>
+                <div class="col-md-6 col-lg-4"><a href="ponteland-renovations.html" class="text-decoration-none"><div class="related-card h-100"><i class="bi bi-house-gear text-primary fs-2 mb-3 d-block"></i><h5 class="mb-2">Property Renovations</h5><p class="text-muted mb-0" style="font-size:0.9rem;">Full and partial renovations — replanning, kitchen, bathroom, and structural reconfiguration.</p></div></a></div>
+                <div class="col-md-6 col-lg-4"><a href="ponteland-roofing.html" class="text-decoration-none"><div class="related-card h-100"><i class="bi bi-triangle text-primary fs-2 mb-3 d-block"></i><h5 class="mb-2">Roofing</h5><p class="text-muted mb-0" style="font-size:0.9rem;">Slate, tile, leadwork, and flat roofing — often combined with general building works for efficiency.</p></div></a></div>
+            </div>
+            <div class="text-center mt-4"><a href="darras-hall.html" class="btn btn-outline-primary">All Ponteland Services</a></div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-3">Need a Local Builder in Ponteland?</h2>
+            <p class="lead mb-4" style="opacity:0.9;">Get in touch for a free site visit and no-obligation written quote.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="contact.html" class="btn btn-light btn-lg px-5">Get a Free Quote</a>
+                <a href="tel:07977003176" class="btn btn-outline-light btn-lg px-5"><i class="bi bi-telephone me-2"></i>07977 003176</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0"><h5 class="fw-bold mb-3"><i class="bi bi-hammer"></i> C.A. Beresford</h5><p class="text-muted">Quality building and joinery services across Northumberland, including Ponteland, Darras Hall, and surrounding villages.</p></div>
+                <div class="col-md-4 mb-3 mb-md-0"><h5 class="fw-bold mb-3">Quick Links</h5><ul class="list-unstyled"><li><a href="services.html" class="text-muted text-decoration-none">Services</a></li><li><a href="areas.html" class="text-muted text-decoration-none">Areas We Cover</a></li><li><a href="gallery.html" class="text-muted text-decoration-none">Gallery</a></li><li><a href="testimonials.html" class="text-muted text-decoration-none">Testimonials</a></li><li><a href="contact.html" class="text-muted text-decoration-none">Contact</a></li></ul></div>
+                <div class="col-md-4"><h5 class="fw-bold mb-3">Contact Info</h5><p class="text-muted mb-2"><i class="bi bi-telephone"></i> <a href="tel:07977003176" class="text-muted text-decoration-none">07977 003176</a></p><p class="text-muted mb-2"><i class="bi bi-envelope"></i> <a href="mailto:chris.beresford@hotmail.com" class="text-muted text-decoration-none">chris.beresford@hotmail.com</a></p><p class="text-muted"><i class="bi bi-geo-alt"></i> Alnwick, Northumberland</p></div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="text-center text-muted"><p class="mb-0">&copy; 2026 C.A. Beresford. All rights reserved.</p></div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>const navbar=document.querySelector('.navbar');window.addEventListener('scroll',()=>{navbar.classList.toggle('scrolled',window.scrollY>30);});</script>
+</body>
+</html>
